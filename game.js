@@ -30,7 +30,7 @@ function main(currentTime) {
   draw();
 }
 
-window.requestAnimationFrame(main);
+window.requestAnimationFrame.call(window, main);
 
 function update() {
   updateSnake();
